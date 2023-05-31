@@ -1,0 +1,4 @@
+# Other Gitignore rules...
+
+# Ignore .env file
+.env
