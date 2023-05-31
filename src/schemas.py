@@ -33,6 +33,7 @@ class UserDb(BaseModel):
     id: int
     username: str
     email: str
+    avatar: str
 
     class Config:
         orm_mode = True
@@ -49,3 +50,5 @@ class TokenModel(BaseModel):
     token_type: str = "bearer"
 
 
+class RequestEmail(BaseModel):
+    email: EmailStr
